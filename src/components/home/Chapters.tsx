@@ -53,7 +53,6 @@ function Chapter({ chapter, index }: { chapter: Chapter; index: number }) {
 
   const videoY   = useTransform(scrollYProgress, [0, 1], reduced ? ['0%', '0%'] : ['-8%', '8%'])
   const opacity  = useTransform(scrollYProgress, [0, 0.08, 0.82, 1], [0, 1, 1, 0])
-  const contentY = useTransform(scrollYProgress, [0, 0.12, 0.8, 1], reduced ? [0,0,0,0] : [28, 0, 0, -18])
 
   // Title: grows from 0.6x to 1x as section enters, shrinks back as it leaves
   const titleScale   = useTransform(scrollYProgress, [0, 0.35, 0.65, 1], reduced ? [1,1,1,1] : [0.55, 1, 1, 0.55])

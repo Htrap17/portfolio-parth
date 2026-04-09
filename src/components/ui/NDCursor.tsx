@@ -12,7 +12,7 @@ export default function NDCursor() {
   const [pos, setPos]       = useState({ x: -100, y: -100 })
   const [dense, setDense]   = useState(false)
   const [visible, setVisible] = useState(false)
-  const raf = useRef<number>()
+  const raf = useRef<number | null>(null)
   const target = useRef({ x: -100, y: -100 })
   const current = useRef({ x: -100, y: -100 })
 
@@ -51,7 +51,9 @@ export default function NDCursor() {
       document.removeEventListener('mousemove', onMove)
       document.removeEventListener('mouseleave', onLeave)
       document.removeEventListener('mouseenter', onEnter)
-      if (raf.current) cancelAnimationFrame(raf.current)
+      if (raf.current !== null) {
+       cancelAnimationFrame(raf.current)
+      }
     }
   }, [reduced, visible])
 

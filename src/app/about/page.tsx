@@ -26,22 +26,22 @@ export default function AboutPage() {
 
             <FadeIn delay={0.1}>
               <p className="text-text/80 text-lg leading-[1.8] mb-6">
-                I'm a cinematographer and DOP based in Roorkee. I studied Economics at IIT Roorkee,
+                I&apos;m a cinematographer and DOP based in Roorkee. I studied Economics at IIT Roorkee,
                 but most of my real education happened in the dark, watching films, learning how
-                light falls, understanding why a frame holds or doesn't.
+                light falls, understanding why a frame holds or doesn&apos;t.
               </p>
             </FadeIn>
 
             <FadeIn delay={0.16}>
               <p className="text-text/80 text-lg leading-[1.8] mb-6">
-                I work on short films and music videos. The scale doesn't matter much to me, what
+                I work on short films and music videos. The scale doesn&apos;t matter much to me, what
                 matters is whether the image is honest. Whether it earns its place in the cut.
               </p>
             </FadeIn>
 
             <FadeIn delay={0.22}>
               <p className="text-text/80 text-lg leading-[1.8] mb-6">
-                For the past 4 years, I've been part of Cinematic Section, IIT Roorkee
+                For the past 4 years, I&apos;ve been part of Cinematic Section, IIT Roorkee
                 where most of this work was made.
               </p>
             </FadeIn>

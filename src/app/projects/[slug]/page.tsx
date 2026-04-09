@@ -40,7 +40,7 @@ export default async function ProjectDetailPage({ params }: Props) {
         <div className="mt-10 max-w-prose">
           <FadeIn delay={0.1}>
             <SectionLabel className="block mb-3">
-              {project.category} · {project.year}{project.format ? ` · ${project.format}` : ''}
+              {`${project.category} · ${project.year}${project.format ? ` · ${project.format}` : ''}`}
             </SectionLabel>
           </FadeIn>
           <FadeIn delay={0.18}>

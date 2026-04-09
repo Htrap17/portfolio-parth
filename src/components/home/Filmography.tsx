@@ -61,6 +61,13 @@ function FrameOpacity({
     <motion.div
       className="flex-shrink-0"
       style={{ width: FRAME_W, opacity, scale }}
+      animate={{ y: [0, -8, 0] }}
+      transition={{
+        duration: 4 + index * 0.5,
+        repeat: Infinity,
+        ease: 'easeInOut',
+        delay: index * 0.4,
+      }}
     >
       {children}
     </motion.div>

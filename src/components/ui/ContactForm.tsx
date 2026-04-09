@@ -23,7 +23,7 @@ export default function ContactForm() {
     return (
       <div className="py-16">
         <p className="font-serif text-3xl text-text mb-3">Message received.</p>
-        <p className="label text-muted">I'll be in touch shortly.</p>
+        <p className="label text-muted">I&apos;ll be in touch shortly.</p>
       </div>
     )
   }

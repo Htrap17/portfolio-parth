@@ -22,8 +22,8 @@ export default function ContactPage() {
             </FadeIn>
             <FadeIn delay={0.1}>
               <p className="text-muted text-base leading-relaxed mb-10">
-                If you're working on something and think we'd be a good fit — a short film,
-                a music video, anything that needs a considered eye — I'd like to hear about it.
+                If you&apos;re working on something and think we&apos;d be a good fit — a short film,
+                a music video, anything that needs a considered eye — I&apos;d like to hear about it.
               </p>
             </FadeIn>
             <FadeIn delay={0.18}>

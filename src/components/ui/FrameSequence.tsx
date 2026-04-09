@@ -1,6 +1,6 @@
 'use client'
 
-import { motion, useReducedMotion } from 'framer-motion'
+import { motion } from 'framer-motion'
 import { type ReactNode } from 'react'
 
 type Props = { children: ReactNode; className?: string }
@@ -17,8 +17,6 @@ const sequenceVariants = {
 }
 
 export default function FrameSequence({ children, className }: Props) {
-  const reduced = useReducedMotion()
-
   return (
     <motion.div
       className={className}

@@ -65,8 +65,6 @@ export function Aperture({ progress, size }: ApertureProps) {
   const openAngle  = progress * OPEN_ANGLE
   // PP visible when open
   const ppOpacity  = Math.max(0, Math.min(1, (progress - 0.3) / 0.5))
-  // Dark center fill — fades as blades open
-  const centerFill = `rgba(5,5,5,${1 - progress * 0.9})`
 
   return (
     <svg
@@ -134,8 +132,8 @@ export default function PPLogo() {
   const [prog, setProg]     = useState(0)   // start CLOSED
   const [locked, setLocked] = useState(false)
   const current             = useRef(0)
-  const timeout             = useRef<ReturnType<typeof setTimeout>>()
-  const raf                 = useRef<number>()
+  const timeout = useRef<ReturnType<typeof setTimeout> | undefined>(undefined)
+  const raf = useRef<number | null>(null)
 
   // Open on mount
   useEffect(() => {

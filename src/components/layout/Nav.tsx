@@ -23,6 +23,7 @@ export default function Nav() {
   }, [open])
 
   // close on route change
+  // eslint-disable-next-line react-hooks/set-state-in-effect
   useEffect(() => { setOpen(false) }, [pathname])
 
   return (

@@ -2,7 +2,7 @@
 
 import { projects } from '@/data/projects'
 import ProjectCard from './ProjectCard'
-import { motion, useReducedMotion } from 'framer-motion'
+import { motion } from 'framer-motion'
 
 // Grid orchestrates stagger — each card is a "frame" placed in sequence
 const gridVariants = {
@@ -16,8 +16,6 @@ const gridVariants = {
 }
 
 export default function ProjectGrid() {
-  const reduced = useReducedMotion()
-
   return (
     <motion.div
       className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-16"

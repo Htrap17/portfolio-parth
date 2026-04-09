@@ -36,20 +36,20 @@ export default function AboutNote() {
               <p className="text-text/70 text-lg leading-[1.85] mb-7">
                 I studied Economics at IIT Roorkee. Most of my real education happened
                 in the dark, watching films, learning how light falls, understanding
-                why a frame holds or doesn't.
+                why a frame holds or doesn&apos;t.
               </p>
             </FadeIn>
 
             <FadeIn delay={0.2}>
               <p className="text-text/70 text-lg leading-[1.85] mb-7">
-                The economics training wasn't wasted. It taught me to read systems,
-                find what's essential, cut what isn't. I apply the same logic to a frame.
+                The economics training wasn&apos;t wasted. It taught me to read systems,
+                find what&apos;s essential, cut what isn&apos;t. I apply the same logic to a frame.
               </p>
             </FadeIn>
 
             <FadeIn delay={0.3}>
               <p className="text-text/70 text-lg leading-[1.85] mb-7">
-                For the past 4 years, I've been part of Cinematic Section, IIT Roorkee
+                For the past 4 years, I&apos;ve been part of Cinematic Section, IIT Roorkee
                 where most of this work was made.
               </p>
             </FadeIn>
